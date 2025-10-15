@@ -19,7 +19,7 @@ class HomeworkApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Homework Manager',
-      theme: ThemeData(primarySwatch: Colors.pink),
+      theme: ThemeData(primarySwatch: Colors.indigo),
       home: const HomeworkListPage(),
     );
   }
