@@ -17,7 +17,7 @@ class RockPaperScissorsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Rock Paper Scissors',
+      title: 'Rock Paper Scissor',
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
