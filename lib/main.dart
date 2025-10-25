@@ -1,26 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'bloc/Homework_bloc.dart';
-import 'Pages/HomeworkListPage.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'bloc/movie_bloc.dart.dart';
+import 'pages/movie_list_page.dart.dart';
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => HomeworkBloc(),
-      child: const HomeworkApp(),
+    BlocProvider(
+      create: (_) => MovieBloc(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: MoviePage(),
+      ),
     ),
   );
-}
-
-class HomeworkApp extends StatelessWidget {
-  const HomeworkApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Homework Manager',
-      theme: ThemeData(primarySwatch: Colors.indigo),
-      home: const HomeworkListPage(),
-    );
-  }
 }

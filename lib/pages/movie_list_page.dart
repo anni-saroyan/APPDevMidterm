@@ -1,0 +1,4 @@
+class MoviePage {
+  List<Movie>;
+
+}

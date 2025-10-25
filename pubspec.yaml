@@ -30,11 +30,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
 
-  provider: ^6.1.2
-  go_router: ^14.0.0
-  flutter_bloc: ^9.0.0   # optional, if you plan to use bloc pattern
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+  shared_preferences: ^2.3.3
+  # optional, if you plan to use bloc pattern
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
